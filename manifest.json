@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Web AI Blocker",
+  "name": "Monkey Lock",
   "version": "1.0",
   "description": "An on/off switch to toggle between study modes.",
   "action": {
@@ -23,7 +23,18 @@
   "host_permissions": [
     "*://apple.com/*",
     "*://*.apple.com/*",
-    "https://www.youtube.com/*"
+    "https://www.youtube.com/*",
+    "*://*.chatgpt.com/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/acm_logo.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ],
   "content_scripts": [
     {

@@ -11,23 +11,24 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "url": "https://www.youtube.com/"
+        "extensionPath": "/images/monkey-i-see.gif"
       }
     }
   },
   {
     "id": 2,
     "priority": 1,
-    "action": {
-      "type": "block"
-    },
     "condition": {
-      "requestDomains": [
-        "chatgpt.com"
-      ],
+      "urlFilter": "||chatgpt.com/",
       "resourceTypes": [
         "main_frame"
       ]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/images/monkey-i-see.gif"
+      }
     }
   }
 ]
