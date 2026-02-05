@@ -2,7 +2,12 @@
   "manifest_version": 3,
   "name": "Monkey Lock",
   "version": "1.0",
-  "description": "An on/off switch to toggle between study modes.",
+  "description": "An extension to block yourself from using AI tools, eliminating the temptation while learning.",
+  "icons": {
+    "16": "images/monkey8.png",
+    "48": "images/monkey8.png",
+    "128": "images/monkey8.png"
+  },
   "action": {
     "default_popup": "popup.html"
   },
@@ -21,16 +26,22 @@
     "declarativeNetRequestFeedback"
   ],
   "host_permissions": [
-    "*://apple.com/*",
-    "*://*.apple.com/*",
-    "https://www.youtube.com/*",
-    "*://*.chatgpt.com/*"
+    "*://*.chatgpt.com/*",
+    "*://*.claude.ai/*",
+    "*://gemini.google.com/*",
+    "*://openai.com/*",
+    "*://*.perplexity.ai/*",
+    "*://perplexity.ai/*",
+    "*://ai.google/*",
+    "*://copilot.microsoft.com/*"
   ],
   "web_accessible_resources": [
     {
       "resources": [
-        "images/acm_logo.png",
-        "images/monkey-i-see.gif"
+        "images/*",
+        "blocked.html",
+        "blocked.css",
+        "blocked.js"
       ],
       "matches": [
         "<all_urls>"

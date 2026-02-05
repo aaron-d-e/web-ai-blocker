@@ -27,3 +27,12 @@ body {
 #container {
   text-align: center;
 }
+
+.monkey-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
