@@ -1,0 +1,29 @@
+/*
+Source - https://stackoverflow.com/a/69058566
+Posted by user16450641
+Retrieved 2026-02-04, License - CC BY-SA 4.0
+*/
+
+/* I added css so you can see the images */
+.blocked-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* optional: limit size */
+  width: 600px;
+  height: auto;
+  max-width: 800px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #808080;
+}
+
+#container {
+  text-align: center;
+}

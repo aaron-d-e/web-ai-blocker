@@ -8,13 +8,9 @@
       font-family: Arial, sans-serif;
       width: 200px;
       padding: 10;
-      margin: 0;
-      border-radius: 0px;
+      margin: 0px;
       overflow: hidden;
       background-color: #808080;
-      border-color: #0F4D0F;
-      border-style: solid;
-      border-width: 15;
 
       display: flex;
       flex-direction: column;
@@ -22,10 +18,12 @@
       justify-content: center;
       gap: 10px;
     }
-h3 {
-  margin: 0;
-  padding: 0;
-}
+
+    h3 {
+      margin: 0;
+      padding: 10 px;
+    }
+
     label {
       display: flex;
       align-items: center;
@@ -37,10 +35,14 @@ h3 {
 
 <body>
   <h3>Web AI Blocker</h3>
-  <label class="toggle-switch">
-    <input type="checkbox" id="toggle" />
-    <span class="slider"></span>
-  </label>
-  <script src="popup.js"></script>
+
+  <body>
+    <label class="toggle-switch">
+      <input type="checkbox" id="toggle" />
+      <span class="slider"></span>
+    </label>
+    <script src="popup.js"></script>
+    Extension to block LLM webpages and AI overview on search.
+  </body>
 
 </html>

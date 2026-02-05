@@ -11,7 +11,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "extensionPath": "/images/monkey-i-see.gif"
+        "extensionPath": "/blocked.html"
       }
     }
   },

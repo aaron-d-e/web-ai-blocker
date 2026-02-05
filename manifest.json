@@ -29,7 +29,8 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "images/acm_logo.png"
+        "images/acm_logo.png",
+        "images/monkey-i-see.gif"
       ],
       "matches": [
         "<all_urls>"
@@ -39,7 +40,8 @@
   "content_scripts": [
     {
       "js": [
-        "content.js"
+        "content.js",
+        "blocked.js"
       ],
       "matches": [
         "<all_urls>"
