@@ -15,16 +15,24 @@ const images = [
 ]
 
 const text = [
-  "You promised you wouldn't...",
-  "You've been a naughty monkey...",
-  "You're a bad, bad monkey...",
+  "You promised you wouldn't do this.",
+  "You've been a naughty monkey.",
+  "You're a bad, bad monkey.",
   "Gotcha!",
-  "Go read an article bro...",
-  "What do you think you're doing?"
+  "Go read an article bro.",
+  "What do you think you're doing?",
+  "You should probably read the docs.",
+  "Find the answer yourself, you lazy monkey."
 ]
-const container = document.getElementById("container"); //insert html element into container
 
 function showImage() {
+
+  chrome.storage.local.get(["blockerEnabled"]).then((result) => {
+    if (result.blockerEnabled == false) {
+      return;
+    }
+  });
+  const container = document.getElementById("container"); //insert html element into container
   console.log("function ran from blocked.js");
   let images_size = images.length;
   let text_size = text.length;

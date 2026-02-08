@@ -51,8 +51,7 @@
   "content_scripts": [
     {
       "js": [
-        "content.js",
-        "blocked.js"
+        "content.js"
       ],
       "matches": [
         "<all_urls>"
